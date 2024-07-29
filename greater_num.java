@@ -5,11 +5,13 @@ public class greater_num {
     public static int greaterNum(int a, int b){
 
         if(a > b){
-            System.out.println("A is greate than B");
+            // System.out.println("A is greate than B");
+            return a;
         } else{
-            System.out.println("B is greater than A");
+            // System.out.println("B is greater than A");
+            return b;
         }
-        return 1;
+        // return 1;
     }
 
     public static void main(String[] args) {
@@ -20,6 +22,6 @@ public class greater_num {
         System.out.print("Enter value of B: ");
         int b = sc.nextInt();
 
-        greaterNum(a, b);
+        System.out.println("Greater numbers is: " + greaterNum(a, b));
     }
 }
