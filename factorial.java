@@ -3,6 +3,11 @@ import java.util.Scanner;
 public class factorial {
     
     public static void fact(int a){
+
+        if(a<0){
+            System.out.println("Invalid Number..! Number must be positive.");
+            return;
+        }
         
         int factorial = 1;
 
