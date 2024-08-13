@@ -7,10 +7,11 @@ public class Functions {
         return;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your name: ");
-        String name = sc.nextLine();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter your name: ");
+            String name = sc.nextLine();
 
-        myName(name);
+            myName(name);
+        }
     }
 }

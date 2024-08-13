@@ -17,10 +17,11 @@ public class sum_of_odd {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter count of odd number: ");
-        int a = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter count of odd number: ");
+            int a = sc.nextInt();
 
-        oddNumSum(a);
+            oddNumSum(a);
+        }
     }
 }

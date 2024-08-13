@@ -10,16 +10,17 @@ public class average {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter value of A: ");
-        int a = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter value of A: ");
+            int a = sc.nextInt();
 
-        System.out.print("Enter value of B: ");
-        int b = sc.nextInt();
+            System.out.print("Enter value of B: ");
+            int b = sc.nextInt();
 
-        System.out.print("Enter value of c: ");
-        int c = sc.nextInt();
-        
-        averageOfThreeNumber(a, b, c);
+            System.out.print("Enter value of c: ");
+            int c = sc.nextInt();
+            
+            averageOfThreeNumber(a, b, c);
+        }
     }
 }

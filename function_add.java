@@ -14,17 +14,18 @@ public class function_add {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter value of A: ");
-        int a = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter value of A: ");
+            int a = sc.nextInt();
 
-        // addition(a);
-        
-        System.out.print("Enter value of B: ");
-        int b = sc.nextInt();
+            // addition(a);
+            
+            System.out.print("Enter value of B: ");
+            int b = sc.nextInt();
 
-        addition(a,b);
-        multi(a,b);
+            addition(a,b);
+            multi(a,b);
+        }
 
     }
 }
